@@ -70,7 +70,34 @@ public class Evaluacionarraylist {
                         System.out.println("---------------------------------");
                         break;
                         
-                
+                case 4: Double mayor = 0.0; 
+                        String nombreEstudiante = "";
+                        for(int i=0;i<velocidadDelEstudiante.size();i++){
+                            if(mayor<velocidadDelEstudiante.get(i)){
+                                mayor = velocidadDelEstudiante.get(i);
+                                nombreEstudiante = estudiantes.get(i);
+                            }
+                        }
+                        System.out.println("-----------------------------------------------------------------------");
+                        System.out.println("El estudiante mas rapido es "+ nombreEstudiante +" con un velocidad de: "+ mayor);
+                        System.out.println("-----------------------------------------------------------------------");
+                        break;
+                        
+                case 5: promedio = 0.0;
+                        for(int i=0;i<tiempoDelEstudiante.size();i++){
+                                promedio = promedio + tiempoDelEstudiante.get(i);
+                             }
+                        promedio = promedio/tiempoDelEstudiante.size();
+                        System.out.println("---------------------------------------------------------------");
+                        System.out.println("El promedio de tiempo es: "+ promedio);
+                        System.out.println("Y los estudiantes con tiempos por encima del promedio son: ");
+                        for(int i=0;i<tiempoDelEstudiante.size();i++){
+                            if(promedio<tiempoDelEstudiante.get(i)){
+                                System.out.println(estudiantes.get(i)+" con "+ tiempoDelEstudiante.get(i));
+                            }
+                        }
+                        System.out.println("---------------------------------------------------------------");
+                        break;
             }
             
         }
