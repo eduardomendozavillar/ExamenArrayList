@@ -17,7 +17,9 @@ public class Evaluacionarraylist {
         
         Scanner leerNombre = new Scanner(System.in);
         Scanner leerNumero = new Scanner(System.in);
+        Scanner leerOpcion = new Scaner(System.in);     
         String nombre;
+        Double velocidad,tiempo;
         
         int opcion = 1;
         while(opcion!=0){
@@ -28,6 +30,14 @@ public class Evaluacionarraylist {
                 System.out.println("Ingrese el nombre del estudiante: ");
                 nombre = leerNombre.next();
                 estudiantes.add(nombre);
+                
+                System.out.println("Ingrese la velocidad del estudiante: ");
+                velocidad = leerNumero.nextDouble();
+                velocidadDelEstudiante.add(velocidad);
+                
+                System.out.println("Ingrese el tiempo del estudiante: ");
+                tiempo = leerNumero.nextDouble();
+                tiempoDelEstudiante.add(tiempo);
                 
             }
         }
